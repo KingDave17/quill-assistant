@@ -1,0 +1,64 @@
+.outputArea{
+    
+    margin: 100px 128px;
+    
+}
+.outputArea h1{
+    color: #d0bcff;
+    
+}
+.quillResponse{
+    background-color: #161920;
+    padding: 25px 40px;
+    border-radius: 12px;
+    
+}
+.copyButton{
+    
+    background-color: #0d0f14;
+    color: #CBC3D7;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 190px;
+    margin-top: 40px;
+    display: flex;
+    gap: 5px;
+    
+}
+.regenerateButton{
+    background-color: #d0bcff;
+    color: #5433a1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0px 4px 15px rgba(109, 59, 215, 0.4);
+    width: 160px;
+    margin-top: 40px;
+    display: flex;
+    gap: 5px;
+}
+.outputButtons{
+    display: flex;
+    gap: 25px;
+}
+.quillResponse {
+    color: #CBC3D7; 
+    line-height: 1.6;
+    font-size: 1rem;
+}
+.quillResponse p {
+    margin-bottom: 16px;
+}
+.quillResponse strong {
+    color: #D0BCFF; /* Or whatever color you prefer for emphasis! */
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+

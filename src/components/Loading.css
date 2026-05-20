@@ -1,0 +1,31 @@
+.loadingArea{
+    background-color: #161920;
+    padding: 25px 40px;
+    border-radius: 12px;
+    margin: 100px 128px;
+}
+.loadingHeader h1{
+    color: #d0bcff;
+    animation: pulse 1.5s infinite;
+    
+}
+.skeletonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.skeletonLine {
+    height: 16px;
+    background-color: #2a2d35; 
+    border-radius: 4px;
+    width: 100%;
+    animation: pulse 1.5s infinite;
+}
+.skeletonLine.w-80 { width: 80%; }
+.skeletonLine.w-60 { width: 60%; }
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}

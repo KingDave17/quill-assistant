@@ -1,0 +1,102 @@
+.sidebarOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.historySidebar {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100vh;
+    background-color: #161920;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.historySidebar.open {
+    right: 0;
+}
+
+.sidebarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebarHeader h2 {
+    color: #E2E2EB;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    color: #CBC3D7;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeButton:hover {
+    color: #fff;
+}
+
+.historyList {
+    padding: 20px 24px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.emptyHistory {
+    color: #CBC3D7;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.historyItem {
+    background-color: #111319;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.historyItem:hover {
+    background-color: rgba(208, 188, 255, 0.1);
+    border-color: rgba(208, 188, 255, 0.3);
+}
+
+.historyDate {
+    display: block;
+    font-size: 0.8rem;
+    color: #A078FF;
+    margin-bottom: 4px;
+}
+
+.historyPrompt {
+    color: #CBC3D7;
+    margin: 0;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
