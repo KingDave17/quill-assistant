@@ -1,8 +1,22 @@
-.loadingArea{
+.loadingArea {
     background-color: #161920;
     padding: 25px 40px;
     border-radius: 12px;
-    margin: 100px 128px;
+    margin: 48px 128px;
+}
+
+@media (max-width: 1024px) {
+    .loadingArea {
+        margin: 40px 40px;
+        padding: 25px 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .loadingArea {
+        margin: 24px 16px;
+        padding: 20px 20px;
+    }
 }
 .loadingHeader h1{
     color: #d0bcff;

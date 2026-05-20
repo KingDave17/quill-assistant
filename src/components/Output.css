@@ -1,35 +1,67 @@
-.outputArea{
-    
-    margin: 100px 128px;
-    
+.outputArea {
+    margin: 48px 128px;
 }
-.outputArea h1{
+
+.outputArea h1 {
     color: #d0bcff;
-    
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 16px;
 }
-.quillResponse{
+
+.quillResponse {
     background-color: #161920;
     padding: 25px 40px;
     border-radius: 12px;
-    
+    color: #CBC3D7; 
+    line-height: 1.6;
+    font-size: 1rem;
 }
-.copyButton{
-    
+
+.quillResponse p {
+    margin-bottom: 16px;
+}
+
+.quillResponse p:last-child {
+    margin-bottom: 0;
+}
+
+.quillResponse strong {
+    color: #D0BCFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.outputButtons {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.copyButton {
     background-color: #0d0f14;
     color: #CBC3D7;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 500;
     width: 190px;
-    margin-top: 40px;
     display: flex;
-    gap: 5px;
-    
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
-.regenerateButton{
+
+.copyButton:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.regenerateButton {
     background-color: #d0bcff;
     color: #5433a1;
     border: none;
@@ -40,25 +72,51 @@
     font-weight: 500;
     box-shadow: 0px 4px 15px rgba(109, 59, 215, 0.4);
     width: 160px;
-    margin-top: 40px;
     display: flex;
-    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: opacity 0.2s;
 }
-.outputButtons{
-    display: flex;
-    gap: 25px;
+
+.regenerateButton:hover {
+    opacity: 0.9;
 }
-.quillResponse {
-    color: #CBC3D7; 
-    line-height: 1.6;
-    font-size: 1rem;
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .outputArea {
+        margin: 40px 40px;
+    }
+    .quillResponse {
+        padding: 25px 32px;
+    }
 }
-.quillResponse p {
-    margin-bottom: 16px;
-}
-.quillResponse strong {
-    color: #D0BCFF; /* Or whatever color you prefer for emphasis! */
-    font-weight: 700;
-    font-size: 1.2rem;
+
+@media (max-width: 640px) {
+    .outputArea {
+        margin: 24px 16px;
+    }
+    
+    .outputArea h1 {
+        font-size: 1.2rem;
+    }
+    
+    .quillResponse {
+        padding: 20px 20px;
+        font-size: 0.95rem;
+    }
+    
+    .outputButtons {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 24px;
+    }
+    
+    .copyButton,
+    .regenerateButton {
+        width: 100%;
+        padding: 12px 20px;
+    }
 }
 

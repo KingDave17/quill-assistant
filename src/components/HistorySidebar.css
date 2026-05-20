@@ -11,8 +11,9 @@
 .historySidebar {
     position: fixed;
     top: 0;
-    right: -350px;
-    width: 350px;
+    right: -100%;
+    width: 100%;
+    max-width: 350px;
     height: 100vh;
     background-color: #161920;
     border-left: 1px solid rgba(255, 255, 255, 0.08);
